@@ -30,6 +30,8 @@ import { useParams, Link } from 'react-router-dom'
             strIngredient5,
           } = data.drinks[0]
 
+         
+
           const ingredients = [
             strIngredient1,
             strIngredient2,
@@ -47,6 +49,7 @@ import { useParams, Link } from 'react-router-dom'
             instructions,
             ingredients,
           }
+
           setCocktail(newCocktail)
         } else {
           setCocktail(null)
@@ -81,7 +84,7 @@ import { useParams, Link } from 'react-router-dom'
         <h2 className='section-title'>{name}</h2>
         <div className='drink'>
           <img src={image} alt={name}></img>
-          <div className='drink-info'>
+          <div className='drink-info test'>
             <p>
               <span className='drink-data'>name :</span> {name}
             </p>
